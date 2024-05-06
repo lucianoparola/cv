@@ -1,20 +1,32 @@
-/* Estilos generales */
+/* Reset de estilos y estilos generales */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-header, footer {
+/* Estilos para el encabezado */
+
+header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -31,22 +43,53 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* Estilos específicos para secciones */
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Estilos para las secciones */
 
 section {
     padding: 50px 0;
 }
 
 section h2 {
+    font-size: 28px;
     color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Estilos para el footer */
 
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
     margin-top: 50px;
 }
 
+footer p {
+    font-size: 14px;
+}
+
+/* Estilos para enlaces */
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
